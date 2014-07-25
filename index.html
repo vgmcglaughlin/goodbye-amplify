@@ -348,7 +348,7 @@ function goToSurprise() {
 }
 
 seekIntervalId = setInterval(function () {
-    if (player.getCurrentTime() - lastTime > 2) {
+    if (player.getCurrentTime() - lastTime > 5) {
         console.log('seek detected');
         player.seekTo(0);
     } else if (player.getCurrentTime() > 150) {
